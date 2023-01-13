@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill's Recommendation Generator</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;1,300&family=Qwigley&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- My Scripts -->
+    <script src="wordlists.js" defer></script>
+    <script src="script.js" defer></script>
+
+
+</head>
+<body>
+
+    <div id="page">
+        <h2>to whom it may concern&hellip;</h2>
+        <main>
+            <div id="container" style="left: 0;">
+                <section>
+                    <a href="#" id="previous1" class="back">previous</a>
+                    <form id="step1">
+                        <p>I need some adjectives and nouns&hellip; <br>
+                        or click&hellip;</p>
+                        <div>
+                            <a href="#" id="dmmt1" class="dmmt">don&rsquo;t make<br>me think</a>
+                            <fieldset>
+                                <label>Adjective<br>
+                                    <input type="text" id="adj1" placeholder="strong">
+                                </label>
+                                <label>Adjective<br>
+                                    <input type="text" id="adj2" placeholder="sweet">
+                                </label>
+                                <label>Adjective<br>
+                                    <input type="text" id="adj3" placeholder="bright">
+                                </label>
+                                <label>Adjective<br>
+                                    <input type="text" id="adj4" placeholder="spacious">
+                                </label>
+                                <label>Adjective<br>
+                                    <input type="text" id="adj5" placeholder="wide">
+                                </label>
+                                <label>Adjective<br>
+                                    <input type="text" id="adj6" placeholder="skinny">
+                                </label>
+                                <label>Plural Noun<br>
+                                    <input type="text" id="pnoun1" placeholder="llamas">
+                                </label>
+                                <label>Singular Noun<br>
+                                    <input type="text" id="snoun1" placeholder="desk">
+                                </label>
+                            </fieldset>
+                        </div>
+                    </form>
+                    <a href="#" id="next1" class="forward">next</a>
+                </section>
+
+                <section>
+                    <a href="#" id="previous2" class="back">previous</a>
+                    <form id="step2">
+                        <p>I need some verbs, adverbs and superlatives&hellip; <br>
+                        or click&hellip;</p>
+                        <div>
+                            <a href="#" id="dmmt2" class="dmmt">don&rsquo;t make<br>me think</a>
+                            <fieldset>
+                                <label>Verb<br>
+                                    <input type="text" id="verb1" placeholder="jump">
+                                </label>
+                                <label>Past Tense Verb<br>
+                                    <input type="text" id="verbpast1" placeholder="cried">
+                                </label>
+                                <label>Action Verb ending in ING<br>
+                                    <input type="text" id="verbing1" placeholder="stretching">
+                                </label>
+                                <label>Action Verb ending in ING<br>
+                                    <input type="text" id="verbing2" placeholder="eating">
+                                </label>
+                                <label>Adverb<br>
+                                    <input type="text" id="adverb1" placeholder="extremely">
+                                </label>
+                                <label>Adverb<br>
+                                    <input type="text" id="adverb2" placeholder="quickly">
+                                </label>
+                                <label>Superlative<br>
+                                    <input type="text" id="super1" placeholder="best, worst, highest, etc.">
+                                </label>
+                                <label>Superlative<br>
+                                    <input type="text" id="super2" placeholder="best, worst, highest, etc.">
+                                </label>
+                            </fieldset>
+                        </div>
+                    </form>
+                    <a href="#" id="next2" class="forward">next</a>
+                </section>
+
+                <section>
+                    <a href="#" id="previous3" class="back">previous</a>
+                    <form id="step3">
+                        <p>I need some more details&hellip; <br>
+                        or click&hellip;</p>
+                        <div>
+                            <a href="#" id="dmmt3" class="dmmt">don&rsquo;t make<br>me think</a>
+                            <fieldset>
+                                <label>Organization name<br>
+                                    <input type="text" id="org1" placeholder="NASA">
+                                </label>
+                                <label>Organization name<br>
+                                    <input type="text" id="org2" placeholder="Catholic Church">
+                                </label>
+                                <label>Field of study<br>
+                                    <input type="text" id="study1" placeholder="design">
+                                </label>
+                                <label>Field of study<br>
+                                    <input type="text" id="study2" placeholder="paleontology">
+                                </label>
+                                <label>Role within an organization<br>
+                                    <input type="text" id="role1" placeholder="student">
+                                </label>
+                                <label>Another role<br>
+                                    <input type="text" id="role2" placeholder="assistant">
+                                </label>
+                            </fieldset>
+                        </div>
+                    </form>
+                    <a href="#" id="next3" class="forward">next</a>
+                </section>
+
+                <section>
+                    <a href="#" id="previous4" class="back">previous</a>
+                    <form id="step4">
+                        <p>And just a few more&hellip; <br>
+                        or click&hellip;</p>
+                        <div>
+                            <a href="#" id="dmmt4" class="dmmt">don&rsquo;t make<br>me think</a>
+                            <fieldset>
+                                <label>A period of time (plural)<br>
+                                    <input type="text" id="time1" placeholder="years">
+                                </label>
+                                <label>A body part (singular)<br>
+                                    <input type="text" id="body1" placeholder="arm">
+                                </label>
+                                <label>Committee name<br>
+                                    <input type="text" id="committee1" placeholder="hiring, scholarship, etc.">
+                                </label>
+                            </fieldset>
+                        </div>
+                    </form>
+                    <a href="#" id="next4" class="forward">next</a>
+                </section>
+
+                <section>
+                    <a href="#" id="previous5" class="back">previous</a>
+                    <form id="step5">
+                        <p>These are the last few details I need&hellip; 
+                        <div>
+                            <!-- <a href="#" id="dmmt5" class="dmmt">don&rsquo;t make<br>me think</a> -->
+                            <fieldset>
+                                <label>Your Name<br>
+                                    <input type="text" id="yourname" placeholder="Miguel Garcia">
+                                </label>
+                                <label>Preferred pronouns<br>
+                                    <select id="pronouns1">
+                                        <option value="">----</option>
+                                        <option value="0">They, them, theirs</option>
+                                        <option value="1">She, her, hers</option>
+                                        <option value="2">He, him, his</option>
+                                    </select>
+                                </label>
+                            </fieldset>
+                        </div>
+                    </form>
+                    <a href="#" id="next5" class="forward">Ready?</a>
+                </section>
+
+                <section>
+                    <a href="#" id="previous6" class="back">previous</a>
+                    <form id="step6">
+                        <p>Ok, ready for your personalized recommendation?</p> 
+                        <a href="#" id="submit">Generate Recommendation!</a>
+                    </form>
+                    <a href="#" id="next6" class="forward">hidden</a>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <img src="images/typewriter-ideas.png" alt="typewriter with ideas" title="generated by Midjourney AI">
+            <div>
+                <h1>Bill &rsquo;s Recommendation Generator</h1>
+                <p>if you need a recommendation from me, I am happy to provide one for you, <br>just fill out the form above, to provide the details you need me to write about.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="madlib" class="hidden">
+        <article >
+            <img src="images/typewriter-ideas.png" alt="typewriter ideas" id="typewriter">
+            <img src="images/close.svg" alt="close icon" id="closeicon" class="close">
+            <div>
+                <h2>Your Recommendation</h2>
+                <p>To the COMMITTEE,</p>
+                <p>I am extremely ADJECTIVE to recommend NAME as a ROLE at ORGANIZATION.</p>
+
+                <p>I have known NAME for over two PERIOD OF TIME, and she has completed FIELD OF STUDY courses with me, VERB-ING SUPERLATIVE quality work. In these FIELD OF STUDY courses students VERB NOUNS, and test their NOUNS with ADJECTIVE users. I would give my ADJECTIVE left BODY PART to have NAME back in class!</p>
+
+                <p>Besides the ADJECTIVE work NAME did in my course, NAME has been ADVERB ADJECTIVE as a ROLE in ORGANIZATION. She has shown an aptitude for FIELD OF STUDY, and has VERB-PAST everyone with her ADVERB ADJECTIVE ideas.</p>
+
+                <p>In summary, NAME is the SUPERLATIVE and would be a strong NOUN for ROLE at ORGANIZATION. I strongly recommend VERB-ING NAME.</p>
+            </div>
+        </article>
+    </div>
+    
+</body>
+</html>
